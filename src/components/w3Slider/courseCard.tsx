@@ -1,7 +1,7 @@
 import React from 'react';
 import { Rate } from 'antd';
 import Image from "next/image";
-import { truncateTextByWords } from '@/shared/utils';
+import { truncateTextByWords } from '../../shared/utils';
 
 
 const App = ({rate}) => <Rate disabled allowHalf defaultValue={rate} />;

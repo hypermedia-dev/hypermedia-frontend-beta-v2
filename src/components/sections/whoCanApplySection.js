@@ -39,7 +39,7 @@ const WhoCanApply = () =>{
             <div className="md:mt-40 md:w-[55%] sm:w-4/5 text-center mx-auto md:my-10">
             
             <h2 className="text-4xl font-bold sm:pb-4">Who can apply to Hypermedia?</h2>
-            <p className="my-6 sm:hidden">Whether you're a recent graduate, a career changer, or someone looking to enhance your tech skills, 
+            <p className="my-6 sm:hidden">Whether you&apos;re a recent graduate, a career changer, or someone looking to enhance your tech skills, 
                 Hypermedia welcomes individuals who are passionate about advancing their careers in technology.
                 </p>
             
@@ -48,7 +48,7 @@ const WhoCanApply = () =>{
                 <div className="w-4/5 grid grid-col-1 md:grid-cols-2 md:gap-4 mx-auto">
                     <div className="sm:hidden md:block">
                     <Suspense fallback={<Loading />}>
-                        <Image src={whocanapply.src} width={800} height={800} loading={'lazy'}/>
+                        <Image src={whocanapply.src} width={800} height={800} loading={'lazy'} alt={'Who can apply'}/>
                     </Suspense>
                     </div>
                     <div>

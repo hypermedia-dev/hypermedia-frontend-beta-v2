@@ -1,8 +1,7 @@
 'use client';
-import Image from "next/image"
-import chevronUp from "../../v2/assets/icons/chevron-up.svg";
-import chevronDown from "../../v2/assets/icons/chevron-down.svg";
-import { useEffect, useState } from "react";
+import Image from "next/image";
+import chevronDown from "../assets/icons/chevron-down.svg";
+import { useState } from "react";
 
 
 const Collapsable = ({ faqs }) => {

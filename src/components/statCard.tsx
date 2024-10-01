@@ -7,7 +7,7 @@ const Card = ({ metric, stat, unit, widthClass }) => (
     </div>
   );
   
-  const StatisticsCards = React.memo(({ stats }) => {
+  const StatisticsCards:React.FC = React.memo(({ stats }) => {
     if (!stats || stats.length < 2) return null;
   
     const [firstStat, secondStat, thirdStat, fourthStat] = stats;
@@ -25,4 +25,6 @@ const Card = ({ metric, stat, unit, widthClass }) => (
       </>
     );
   });
+
+StatisticsCards.displayName = 'StatisticsCards';
 export default StatisticsCards;
