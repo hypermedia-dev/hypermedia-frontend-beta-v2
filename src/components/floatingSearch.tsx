@@ -8,7 +8,7 @@ const FloatingSearch = () =>{
   <div className="w-full flex justify-between items-center space-x-2">
     <div className="flex items-center w-10/12 border rounded-[10px] space-x-2 px-2">
       <label htmlFor="search">
-        <Image src={search_icon.src} alt="search icon" width={20} height={20} quality={100} priority={1} />
+        <Image src={search_icon.src} alt="search icon" width={20} height={20} quality={100} priority />
       </label>
       <input
         className="w-full focus:outline-none p-1 text-sm"

@@ -1,6 +1,12 @@
 import Image from "next/image";
 import check from "../assets/icons/check.svg";
-const ListRender = ({data}) =>{
+
+export interface ListRenderType{
+    title: string,
+    desc: string,
+}
+
+const ListRender: React.FC<{data: ListRenderType[]}> = ({data}) =>{
     return(
         <>
         <ul>

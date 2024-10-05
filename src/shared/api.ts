@@ -1,9 +1,4 @@
 
-import frontend from "../versions/v2/assets/frontend.svg";
-import backend from "../versions/v2/assets/backend.svg";
-import fullstack from "../versions/v2/assets/fullstack.svg";
-import uiux from "../versions/v2/assets/uiux.svg";
-
 export const courses = [
     {
       id: "graphic-design",
@@ -74,7 +69,7 @@ By implementing these techniques, designers can organize content, enhance readab
     },
     {
       id:"frontend-development",
-      image_url: frontend.src,
+      image_url: '',
       course: "Frontend Development",
       rating: 5,
       desc:`Frontend development focuses on creating the user interface and experience of web applications. 
@@ -85,7 +80,6 @@ By implementing these techniques, designers can organize content, enhance readab
       price:"Paid",
       duration:"24 Weeks",
       modules: [
-        [
           {
             "topic": "JavaScript Frameworks I (React/Vue/Angular)",
             "desc": "This course explores popular JavaScript frameworks including React, Vue, and Angular. Learn how to build dynamic and interactive web applications using each framework's unique features and best practices. Ideal for developers looking to specialize in frontend development with modern JavaScript frameworks."
@@ -101,15 +95,13 @@ By implementing these techniques, designers can organize content, enhance readab
           {
             "topic": "Advanced Software Testing",
             "desc": "This course delves into advanced topics in software testing, covering techniques for automated testing, performance testing, security testing, and continuous integration/continuous deployment (CI/CD). Learn how to implement comprehensive testing strategies to ensure high-quality software solutions."
-          }
-        ]
-        
+          }    
         
       ],
     },
     {
       id:"backend-development",
-      image_url: backend.src,
+      image_url: '',
       course: "Backend Development",
       rating: 4.5,
       desc:`
@@ -134,13 +126,12 @@ By implementing these techniques, designers can organize content, enhance readab
           "desc": "This course introduces NestJS, a progressive Node.js framework for building efficient, reliable, and scalable server-side applications. Learn how to leverage NestJS's modular architecture, TypeScript support, and powerful features to create enterprise-grade applications. This course is designed for developers with basic knowledge of Node.js and TypeScript who want to advance their backend development skills."
         }
         
-      
       ],
     },
     {
       id:"full-stack-development",
       image_url: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      course: fullstack.src,
+      course: '',
       desc:`
       Fullstack development combines both frontend and backend development skills. 
       Fullstack developers are proficient in both client-side and server-side technologies, allowing them to build complete, end-to-end web applications.
@@ -167,7 +158,6 @@ By implementing these techniques, designers can organize content, enhance readab
           "topic": "Introduction to Cloud Computing",
           "desc": "This course provides an overview of cloud computing concepts and services. Learn about the different cloud service models (IaaS, PaaS, SaaS), cloud deployment models, and major cloud providers like AWS, Azure, and Google Cloud. Understand the benefits of cloud computing and how to leverage it for scalable and cost-effective solutions. This course is suitable for beginners and those new to cloud computing."
         }
-        
         
       ],
     },
@@ -246,6 +236,7 @@ IT systems, short for Information Technology systems, refer to the interconnecte
       id:"website-design",
       image_url: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       course: "Website Design",
+      rating: 5,
       desc:`
       
 Website design refers to the process of creating the visual appearance, layout, and structure of a website. It involves various elements such as graphic design, typography, color schemes, navigation menus, and user interface components to create an engaging and user-friendly online experience. Website designers use tools like graphic design software, wireframing tools, and HTML/CSS to design and code the website's layout and aesthetics. The goal of website design is to not only create an attractive website but also to ensure that it is functional, easy to navigate, and effectively communicates the intended message or purpose of the site. Good website design considers factors such as user experience, responsiveness across different devices, and accessibility to ensure that the website meets the needs of its target audience and delivers a positive overall experience.
@@ -259,8 +250,9 @@ Website design refers to the process of creating the visual appearance, layout, 
     },
     {
       id:"ui-ux-design",
-      image_url: uiux.src,
+      image_url: '',
       course: "UI/UX Design",
+      rating: 5,
       desc:`
       UI/UX design refers to the process of creating user interfaces (UI) and user experiences (UX) for digital products, such as websites, mobile apps, and software applications. UI design focuses on the visual elements and layout of the interface, including buttons, menus, typography, colors, and graphics, with the goal of making the interface aesthetically pleasing and easy to navigate. On the other hand, UX design concentrates on the overall experience of the user when interacting with the product, aiming to ensure that it is intuitive, efficient, and satisfying. This involves understanding user behaviors, conducting research, creating user personas, wireframing, prototyping, and testing designs to optimize usability and user satisfaction. Effective UI/UX design is crucial for enhancing user engagement, retention, and overall success of digital products.
       `,
@@ -274,6 +266,7 @@ Website design refers to the process of creating the visual appearance, layout, 
       id:"intro-generative-ai",
       image_url: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       course: "Introduction to Generative AI (ChatGPT)",
+      rating: 3.5,
       desc:`
       
 Generative AI, specifically referring to models like ChatGPT, is a branch of artificial intelligence focused on creating data or content, such as text, images, or music, that is original and coherent. These models are trained on large datasets and use algorithms to generate new content based on patterns and structures learned during training. ChatGPT, for instance, is a language model trained on vast amounts of text data from the internet, enabling it to understand and generate human-like text responses. Generative AI has applications in various fields, including natural language processing, content generation, creative arts, and even scientific research. However, it's important to note that while generative AI can produce highly realistic and coherent content, it may sometimes generate inaccurate or inappropriate outputs, requiring careful monitoring and ethical considerations in its use.
@@ -288,6 +281,7 @@ Generative AI, specifically referring to models like ChatGPT, is a branch of art
       id:"office-productivity",
       image_url: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       course: "Office Productivity (Microsoft Office Suite & Google Suite",
+      rating: 5,
       desc:`
       
 Generative AI, specifically referring to models like ChatGPT, is a branch of artificial intelligence focused on creating data or content, such as text, images, or music, that is original and coherent. These models are trained on large datasets and use algorithms to generate new content based on patterns and structures learned during training. ChatGPT, for instance, is a language model trained on vast amounts of text data from the internet, enabling it to understand and generate human-like text responses. Generative AI has applications in various fields, including natural language processing, content generation, creative arts, and even scientific research. However, it's important to note that while generative AI can produce highly realistic and coherent content, it may sometimes generate inaccurate or inappropriate outputs, requiring careful monitoring and ethical considerations in its use.
@@ -302,6 +296,7 @@ Generative AI, specifically referring to models like ChatGPT, is a branch of art
       id:"pc-fundamentals",
       image_url: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       course: "PC Fundermentals",
+      rating: 5,
       desc:`
       PC fundamentals provides an overview of the basic principles and components involved in operating and maintaining personal computers (PCs). Students learn about hardware components like the CPU, memory, storage, and peripherals, as well as software applications and operating systems. The course covers topics such as file management, security measures, basic maintenance tasks, networking basics, and backup and recovery procedures. By the end of the course, students gain the knowledge and skills needed to effectively use and troubleshoot personal computers in various settings.
       `,
@@ -315,6 +310,7 @@ Generative AI, specifically referring to models like ChatGPT, is a branch of art
       id:"intro-iot",
       image_url: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       course: "Introduction to IoT",
+      rating: 3,
       desc:`
       
 IoT (Internet of Things) encompasses the understanding of interconnected devices that collect, 
@@ -336,6 +332,7 @@ privacy, and data management, which require careful consideration in its impleme
       id:"cloud-fundamentals",
         image_url: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         course: "Cloud Computing Fundamentals",
+        rating: 3,
         desc:`This course offers a comprehensive introduction to cloud computing with Amazon Web Services (AWS). Learn the core concepts of cloud computing, explore essential AWS services, and understand best practices for security, networking, storage, and cost management. Gain hands-on experience through practical labs and projects, preparing you to effectively deploy and manage cloud solutions using AWS.
         
         `,
@@ -398,6 +395,7 @@ privacy, and data management, which require careful consideration in its impleme
         id:"introduction-to-programming",
         image_url: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         course: "Introduction to Software Programming",
+        rating: 4.5,
         desc:`This course provides a comprehensive introduction to programming, ideal for beginners. 
         Learn core programming concepts, control structures, data structures, and secure coding practices. Choose between Python or C/C++ to write efficient and maintainable programs. By the end of the course, you'll be able to build simple applications and have a solid foundation in programming.
         
@@ -407,7 +405,6 @@ privacy, and data management, which require careful consideration in its impleme
         price:"Paid",
         duration:"12 Weeks",
         modules: [
-          [
             {
               "topic": "Introduction to Programming Concepts",
               "desc": "This module introduces fundamental programming concepts such as algorithms, flowcharts, and pseudocode. Learn the basics of writing and understanding simple programs, focusing on problem-solving and logical thinking."
@@ -452,7 +449,6 @@ privacy, and data management, which require careful consideration in its impleme
               "topic": "Project: Building a Simple Application",
               "desc": "Apply what you've learned by building a simple application in your chosen programming language. This project will help you integrate various programming concepts and demonstrate your ability to write efficient and secure programs."
             }
-          ]
           
         ],
       },
@@ -460,6 +456,7 @@ privacy, and data management, which require careful consideration in its impleme
         id:"web-analytics",
         image_url: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         course: "Web Analytics",
+        rating: 3,
         desc:`
         
         `,
@@ -473,6 +470,7 @@ privacy, and data management, which require careful consideration in its impleme
         id:"digital-marketing",
         image_url: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         course: "Digital Marketing",
+        rating: 3.5,
         desc:`
         
         `,
@@ -486,6 +484,7 @@ privacy, and data management, which require careful consideration in its impleme
         id:"content-management-wordpress",
         image_url: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         course: "Content Management (Wordpress)",
+        rating: 3.5,
         desc:`
         
         `,

@@ -1,18 +1,20 @@
 import React from 'react';
 import { Rate } from 'antd';
 import Image from "next/image";
-import { truncateTextByWords } from '../../shared/utils';
+import { truncateTextByWords } from '../shared/utils';
+import { courseType } from '@/types/types';
 
 
-const App = ({rate}) => <Rate disabled allowHalf defaultValue={rate} />;
 
-const CourseCard = ({data}) =>{
-    const {course, image_url, name, desc, level, duration,rating} = data
+const App = ({rate}:{rate:number}) => <Rate disabled allowHalf defaultValue={rate} />;
+
+const CourseCard: React.FC<{ data: courseType }> = ({ data }) => {
+    const {course, image_url, desc, level, duration,rating} = data;
     return(
         <>
         <div className="w-auto h-max-fit bg-white sm:my-4">
             <div className='w-full h-40 overflow-hidden'>
-                <Image src={image_url} width={1000} height={1000} alt={`${name}`}/>
+                <Image src={image_url} width={1000} height={1000} alt={`${course}`}/>
             </div>
                 <div className='p-4'>
                     <h3 className='font-bold'>{course}</h3>

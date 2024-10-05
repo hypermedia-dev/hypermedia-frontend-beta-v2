@@ -1,13 +1,20 @@
 import React from 'react';
 
-const Card = ({ metric, stat, unit, widthClass }) => (
+
+export interface CardType{
+  metric: string, 
+  stat: number, 
+  unit: string, 
+  widthClass?: string
+}
+const Card = ({ metric, stat, unit, widthClass }:CardType) => (
     <div className={`h-38 bg-white shadow-md rounded-lg text-center p-8 flex flex-col justify-center items-center ${widthClass}`}>
       <h3 className="text-4xl font-bold text-[#1570EF]">{stat + unit}</h3>
       <p className="text-gray-500">{metric}</p>
     </div>
   );
   
-  const StatisticsCards:React.FC = React.memo(({ stats }) => {
+  const StatisticsCards = React.memo(({stats}:{stats: CardType[]}) => {
     if (!stats || stats.length < 2) return null;
   
     const [firstStat, secondStat, thirdStat, fourthStat] = stats;

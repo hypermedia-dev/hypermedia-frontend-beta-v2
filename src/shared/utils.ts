@@ -30,7 +30,7 @@
  * @param {number} maxWords - The maximum number of words to keep.
  * @return {string} - The truncated string with ellipses.
  */
-export function truncateTextByWords(text, maxWords=21) {
+export function truncateTextByWords(text:string, maxWords=21) {
   // Split the text into an array of words
   const words = text.split(' ');
 
@@ -42,9 +42,9 @@ export function truncateTextByWords(text, maxWords=21) {
 }
 
 
-export function generateProfilePic({ src, name }) {
+export function generateProfilePic({ src, name }:{src:string, name:string}) {
   // Helper function to generate initials from the name
-  const getInitials = (name) => {
+  const getInitials = (name:string) => {
     if (!name) return "N/A";
     const nameParts = name.trim().split(' ');
     if (nameParts.length === 1) return nameParts[0][0].toUpperCase();

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Suspense } from "react";
 import whocanapply from "../../assets/whocanapply.svg";
-import Loading from "@/versions/v2/components/loading";
+import Loading from "../loading";
 
 const whoApply = [
     {

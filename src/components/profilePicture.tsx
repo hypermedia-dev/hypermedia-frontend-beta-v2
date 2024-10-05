@@ -1,8 +1,17 @@
 import Image from "next/image";
 
-const ProfilePicture = ({ src, name, className, width, height }) => {
+export interface ProfilePictureType{
+  src:string, 
+  name:string, 
+  className:string, 
+  width:number, 
+  height:number
+}
+
+const ProfilePicture = (prop: ProfilePictureType) => {
+  const { src, name, className, width, height } = prop;
   // Helper function to generate initials from the name
-  const getInitials = (name) => {
+  const getInitials = (name:string) => {
     if (!name) return "N/A";
     const nameParts = name.trim().split(" ");
     const initials = (nameParts[0][0] + nameParts[nameParts.length-1][0]).toUpperCase();

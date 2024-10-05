@@ -41,7 +41,7 @@ const StatsSectionComponent = () =>{
                 </div>
                     
             </div>
-            <div class="flex justify-center items-center sm:hidden md:block">
+            <div className="flex justify-center items-center sm:hidden md:block">
             <Image src={imagMap1.src} alt={'image map'} loading={'lazy'} width={600} height={500}/>
             </div>
             </div>

@@ -1,15 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
-import HM_Logo from "../../v1/assets/hm-logo.svg";
-import MobileMenu from "@/versions/v1/components/mobileMenu";
+import HM_Logo from "../assets/hm-logo.svg";
+import MobileMenu from "../components/mobileMenu";
 
 export default function Navbar(){
     return(
         <>
-        <nav  className="md:w-11/12 md:h-20 md:flex md:justify-between md:items-center md:mx-auto md:my-4 sm:hidden">
+        <nav  className="md:w-11/12 md:h-10 md:flex md:justify-between md:items-center md:mx-auto md:my-4 sm:hidden md:p-10">
                 <div>
                 <Link href={"/"}>
-                <Image src={HM_Logo} width={300} height={1000} quality={100}  priority={1} alt="official logo"/>
+                <Image src={HM_Logo} width={300} height={1000} quality={100}  priority alt="official logo"/>
                 </Link>
                 </div>
                 <div>

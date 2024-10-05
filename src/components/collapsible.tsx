@@ -2,23 +2,25 @@
 import Image from "next/image";
 import chevronDown from "../assets/icons/chevron-down.svg";
 import { useState } from "react";
+import { FAQType } from "@/types/types";
 
 
-const Collapsable = ({ faqs }) => {
-    const [activeId, setActiveId] = useState(null);
 
-    const handleDropDown = (id) => {
-        setActiveId(activeId === id ? null : id);
+const Collapsible: React.FC<{ faqs: FAQType[] }> = ({ faqs }) => {
+    const [activeId, setActiveId] = useState<number>(0);
+
+    const handleDropDown = (id:number) => {
+        setActiveId(activeId === id ? 0 : id);
     };
 
     return (
         <div className="p-10 mx-auto">
-            {faqs.slice(0,4).map(({ id, icon, heading, content }) => (
+            {faqs.slice(0,4).map(({ id, heading, content }) => (
                 <div key={id}>
                     <div className="flex justify-between items-center p-2 my-4">
                         <div className="flex rounded-lg">
                         <Image
-                            src={icon}
+                            src={''}
                             className="collapsable-icon rounded-lg"
                             width={30}
                             height={30}
@@ -50,4 +52,4 @@ const Collapsable = ({ faqs }) => {
         </div>
     );
 };
-export default Collapsable;
+export default Collapsible;

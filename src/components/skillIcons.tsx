@@ -52,7 +52,7 @@ const icons = [
               key={index}
               className="text-gray-600 text-4xl transition-transform transform hover:scale-125 hover:text-blue-500 mx-2"
             >
-              <Image src={icon.src} width={25} height={25} priority={1} alt={icon}/>
+              <Image src={icon.src} width={25} height={25} priority alt={icon}/>
             </div>
           ))}
         </div>
@@ -64,7 +64,7 @@ const icons = [
               key={index}
               className="text-gray-600 text-4xl transition-transform transform hover:scale-125 hover:text-blue-500 mx-2"
             >
-              <Image src={icon.src} width={25} height={25} priority={1} alt={icon}/>
+              <Image src={icon.src} width={25} height={25} priority alt={icon}/>
             </div>
           ))}
         </div>
@@ -76,7 +76,7 @@ const icons = [
               key={index}
               className="text-gray-600 text-4xl transition-transform transform hover:scale-125 hover:text-blue-500 mx-2"
             >
-              <Image src={icon.src} width={25} height={25} priority={1} alt={icon}/>
+              <Image src={icon.src} width={25} height={25} priority alt={icon}/>
             </div>
           ))}
         </div>

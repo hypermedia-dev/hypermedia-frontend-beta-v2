@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import HM_Logo from "../../../v1/assets/hm-logo.svg";
+import HM_Logo from "../../assets/hm-logo.svg";
 
 const Footer = () =>{
     return(
@@ -60,7 +60,7 @@ const Footer = () =>{
             <hr/>
                 <div className="md:flex md:justify-between !items-center sm:text-center">
                 <Link href={"/"}>
-                <Image src={HM_Logo} width={300} height={1000} quality={100}  priority={1} alt="official logo" className="mt-4"/>
+                <Image src={HM_Logo} width={300} height={100} quality={100}  priority alt="official logo" className="mt-4"/>
                 </Link>
                 <div>&copy; {new Date().getFullYear()} Hypermedia. All rights reserved.</div>
                 </div>

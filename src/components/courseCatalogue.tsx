@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CourseCard from "./w3Slider/courseCard";
+import CourseCard from "./courseCard";
 import {courses} from "@/shared/api";
 import SkillsIcons from "./skillIcons";
 
@@ -22,6 +22,7 @@ const CourseCatalogue = () =>{
                
                {
                    courses && courses.slice(0, 4).map((item)=>(
+                    
                        <CourseCard data={item} key={item.id}/>
                    ))
                }
